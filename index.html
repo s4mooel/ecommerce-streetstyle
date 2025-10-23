@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreetStyle by Juan Andrés</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>StreetStyle <small>by Juan Andrés</small></h1>
+    </div>
+    <nav class="top-nav">
+      <select id="filtroCategoria" onchange="filtrarPorCategoria()">
+        <option value="todos">Todas</option>
+        <option value="Hoodies">Hoodies</option>
+        <option value="Gorras">Gorras</option>
+        <option value="Busos oversize">Busos oversize</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalogo" class="catalogo">
+      <!-- Productos renderizados aquí -->
+    </section>
+
+    <aside class="carrito" id="carrito">
+      <h2>🧾 Carrito (<span id="cantidad-items">0</span>)</h2>
+      <ul id="lista-carrito"></ul>
+      <p class="total">Total: <strong id="total">COP 0</strong></p>
+      <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
+      <div id="paypal-button-container" style="margin-top:12px;"></div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© StreetStyle by Juan Andrés — Moda urbana</p>
+  </footer>
+
+  <!-- PayPal SDK (sandbox) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+  <script src="script.js"></script>
+</body>
+</html>
