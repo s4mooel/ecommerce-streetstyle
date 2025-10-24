@@ -30,14 +30,14 @@ const productos = [
   },
   { 
     id: 5, 
-    nombre: 'Buso Oversize “Storm”', 
+    nombre: 'Buzo Oversize “Storm”', 
     categoria: 'Busos oversize', 
     precio: 95000, 
     imagen: './img/buzo_storm.png' 
   },
   { 
     id: 6, 
-    nombre: 'Buso Oversize “Skyline”', 
+    nombre: 'Buzo Oversize “Skyline”', 
     categoria: 'Busos oversize', 
     precio: 99000, 
     imagen: './img/buzo2.png' 
