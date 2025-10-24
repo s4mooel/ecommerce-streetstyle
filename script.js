@@ -1,12 +1,49 @@
 // Productos (dataset según estudio de caso)
 const productos = [
-  { id: 1, nombre: 'Hoodie “Black Street”', categoria: 'Hoodies', precio: 120000, imagen: 'https://via.placeholder.com/420x300.png?text=Hoodie+Black+Street' },
-  { id: 2, nombre: 'Hoodie “Retro Gray”', categoria: 'Hoodies', precio: 115000, imagen: 'https://via.placeholder.com/420x300.png?text=Hoodie+Retro+Gray' },
-  { id: 3, nombre: 'Gorra “NYC Flat”', categoria: 'Gorras', precio: 75000, imagen: 'https://via.placeholder.com/420x300.png?text=Gorra+NYC+Flat' },
-  { id: 4, nombre: 'Gorra “Classic White”', categoria: 'Gorras', precio: '70000', imagen: 'https://via.placeholder.com/420x300.png?text=Gorra+Classic+White' },
-  { id: 5, nombre: 'Buso Oversize “Storm”', categoria: 'Busos oversize', precio: 95000, imagen: 'https://via.placeholder.com/420x300.png?text=Buso+Storm' },
-  { id: 6, nombre: 'Buso Oversize “Skyline”', categoria: 'Busos oversize', precio: 99000, imagen: 'https://via.placeholder.com/420x300.png?text=Buso+Skyline' }
+  { 
+    id: 1, 
+    nombre: 'Hoodie “Black Street”', 
+    categoria: 'Hoodies', 
+    precio: 120000, 
+    imagen: './img/buzo_black_street.png' 
+  },
+  { 
+    id: 2, 
+    nombre: 'Hoodie “Retro Gray”', 
+    categoria: 'Hoodies', 
+    precio: 115000, 
+    imagen: './img/buzo_gris.png' 
+  },
+  { 
+    id: 3, 
+    nombre: 'Gorra “NYC Flat”', 
+    categoria: 'Gorras', 
+    precio: 75000, 
+    imagen: './img/gorra.png' 
+  },
+  { 
+    id: 4, 
+    nombre: 'Gorra “Classic White”', 
+    categoria: 'Gorras', 
+    precio: 70000, 
+    imagen: './img/gorra_blanca.png' 
+  },
+  { 
+    id: 5, 
+    nombre: 'Buso Oversize “Storm”', 
+    categoria: 'Busos oversize', 
+    precio: 95000, 
+    imagen: './img/buzo_storm.png' 
+  },
+  { 
+    id: 6, 
+    nombre: 'Buso Oversize “Skyline”', 
+    categoria: 'Busos oversize', 
+    precio: 99000, 
+    imagen: './img/buzo2.png' 
+  }
 ];
+
 
 // Formateador de moneda COP
 const formatCOP = value => new Intl.NumberFormat('es-CO', { style:'currency', currency:'COP' }).format(value);
